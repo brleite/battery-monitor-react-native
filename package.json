@@ -2,6 +2,7 @@
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
+    "startcustom": "expo start -s XXX@gmail.com",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
@@ -9,10 +10,12 @@
   },
   "dependencies": {
     "expo": "~39.0.2",
+    "expo-battery": "~3.0.0",
     "expo-status-bar": "~1.0.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-39.0.3.tar.gz",
+    "react-native-scripts": "^2.0.1",
     "react-native-web": "~0.13.12"
   },
   "devDependencies": {
