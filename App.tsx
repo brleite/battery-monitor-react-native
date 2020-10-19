@@ -8,7 +8,7 @@ import * as BackgroundFetch from "expo-background-fetch";
 import { registerFetchTask, registerLocationTask, initTasks } from "./src/services/tasks";
 
 const INTERVAL = 60 * 1000;
-const FETCH_INTERVAL_TASKS = 5;
+const FETCH_INTERVAL_TASKS = 1 * 60;
 const LOCATION_INTERVAL_TASKS = 5;
 const LOCATION_TASK_NAME = "custom-background-location-task";
 const FETCH_TASK_NAME = "custom-background-fetch-task";
@@ -82,12 +82,12 @@ async function myTaskLocation({ data: { locations }, error }: any) {
 
 initTasks();
 registerFetchTask(FETCH_TASK_NAME, myTaskBackgroundFetch, FETCH_INTERVAL_TASKS);
-registerLocationTask(
+/* registerLocationTask(
   LOCATION_TASK_NAME,
   myTaskLocation,
   LOCATION_INTERVAL_TASKS,
   "Battery Monitor"
-);
+); */
 
 export default function App() {
   const [fontsLoaded] = useFonts({
