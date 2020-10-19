@@ -124,7 +124,7 @@ export default function App() {
   }
 
   useEffect(() => {
-    /* setInterval(() => {
+    setInterval(() => {
       // console.log("setInterval");
 
       atualizaBatteryLevel();
@@ -132,7 +132,7 @@ export default function App() {
       console.log("IntervalDate: " + formatDate(new Date()));
       // setIntervalCount(intervalCount + 1);
       // console.log("IntervalCount: " + intervalCount);
-    }, INTERVAL); */
+    }, INTERVAL);
     atualizaBatteryLevel();
   }, []);
 
